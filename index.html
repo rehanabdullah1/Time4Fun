@@ -21,15 +21,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button onclick="window.location.href='https://app.time4learning.com/App/Playground/UpperLevel.aspx'">
     Agree To <a href="tofs.html">Terms Of Service</a> And Go To Time4Fun
 </button>
-<!-- Cookie Consent Banner -->
-<div id="cookie-consent-banner" class="cookie-banner">
-    <div class="cookie-banner-content">
-        <p>
-            We use cookies to improve your experience. By continuing to use our site, you agree to use cookies
-        </p>
-        <button id="accept-cookies" class="accept-btn">
-            Accept
-        </button>
+    <style>
+    .hidden-message {
+        display: none; 
+        color: green;
+        margin-top: 20px;
+    }
+
+    #myButton {
+        padding: 10px 15px;
+        background-color: #000000; 
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+  
+
+    <h2 id="myText">
+         We use cookies to improve your experience. By continuing to use our site, you agree to use cookies
+    </h2>
+      <button id="myButton">
+         Got It
+    </button>
+
+    <p id="confirmationMessage" class="hidden-message">
+    </p>
+
+    <script>
+        const actionButton = document.getElementById('myButton');
+        const associatedText = document.getElementById('myText');
+        const confirmation = document.getElementById('confirmationMessage');
+
+        actionButton.addEventListener('click', function() {
+            actionButton.style.display = 'none';
+            associatedText.style.display = 'none';
+            confirmation.style.display = 'block';
+        });
+    </script>
     </div>
 </div>
 
@@ -37,6 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </body>
 
 </html>
+
 
 
 
