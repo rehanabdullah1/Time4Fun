@@ -19,6 +19,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <div align=center> 
         <h2>This Is Rehan Abdullah 1 | I Am Not Responsible For Any Trouble That That Happens From The Time4Fun Website </h2>
         </div>
+        <style>
+    .hidden-message {
+        display: none; 
+        color: green;
+        margin-top: 20px;
+    }
+
+    #myButton {
+        padding: 10px 15px;
+        background-color: #000000; 
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+  
+
+    <h2 id="myText">
+         We use cookies to improve your experience. By continuing to use our site, you agree to use cookies
+    </h2>
+      <button id="myButton">
+         Got It
+    </button>
+
+    <p id="confirmationMessage" class="hidden-message">
+    </p>
+
+    <script>
+        const actionButton = document.getElementById('myButton');
+        const associatedText = document.getElementById('myText');
+        const confirmation = document.getElementById('confirmationMessage');
+
+        actionButton.addEventListener('click', function() {
+            actionButton.style.display = 'none';
+            associatedText.style.display = 'none';
+            confirmation.style.display = 'block';
+        });
+    </script>
   </body>
   </head>
 </html>
